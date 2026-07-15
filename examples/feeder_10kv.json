@@ -1,0 +1,78 @@
+{
+  "name": "10kV树状馈线最小诊断案例",
+  "source_node": "S",
+  "metadata": {
+    "region": "demo",
+    "grounding_mode": "neutral via arc suppression coil",
+    "sample_type": "synthetic engineering validation"
+  },
+  "nodes": [
+    {"id": "S", "name": "10kV母线", "kind": "source"},
+    {"id": "N1", "name": "一号开关站"},
+    {"id": "N2", "name": "二号分支点"},
+    {"id": "N3", "name": "三号故障区段首端"},
+    {"id": "N4", "name": "四号末端台区", "kind": "terminal"},
+    {"id": "N5", "name": "五号健康支线末端", "kind": "terminal"}
+  ],
+  "branches": [
+    {
+      "id": "B01",
+      "name": "母线-一号站",
+      "from_node": "S",
+      "to_node": "N1",
+      "length_km": 1.2,
+      "switch_id": "SW01"
+    },
+    {
+      "id": "B12",
+      "name": "一号站-二号分支点",
+      "from_node": "N1",
+      "to_node": "N2",
+      "length_km": 2.1,
+      "switch_id": "SW12"
+    },
+    {
+      "id": "B23",
+      "name": "二号分支点-三号故障区段",
+      "from_node": "N2",
+      "to_node": "N3",
+      "length_km": 3.4,
+      "switch_id": "SW23"
+    },
+    {
+      "id": "B34",
+      "name": "三号区段-四号末端",
+      "from_node": "N3",
+      "to_node": "N4",
+      "length_km": 1.8,
+      "switch_id": "SW34"
+    },
+    {
+      "id": "B25",
+      "name": "二号分支点-五号健康支线",
+      "from_node": "N2",
+      "to_node": "N5",
+      "length_km": 2.6,
+      "switch_id": "SW25"
+    }
+  ],
+  "measurement": {
+    "node_voltage_pu": {
+      "S": 1.0,
+      "N1": 0.99,
+      "N2": 0.97,
+      "N3": 0.7,
+      "N4": 0.68,
+      "N5": 0.96
+    },
+    "branch_zero_sequence_current_a": {
+      "B01": 12.0,
+      "B12": 8.0,
+      "B23": 62.0,
+      "B34": 4.0,
+      "B25": 3.0
+    },
+    "operated_protections": ["B23"],
+    "opened_switches": ["SW23"]
+  }
+}
