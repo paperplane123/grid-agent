@@ -5,7 +5,7 @@ from __future__ import annotations
 import json
 from pathlib import Path
 
-from .diagnosis import FaultDiagnosis, FaultDiagnoser
+from .diagnosis import FaultDiagnoser, FaultDiagnosis
 from .model import FeederCase
 
 

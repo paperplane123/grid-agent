@@ -3,7 +3,6 @@ from pathlib import Path
 
 from grid_agent.society import GridSocietySimulator, load_scenario, run_simulation
 
-
 EXAMPLE = Path(__file__).parents[1] / "examples" / "gridsociety_incident.json"
 
 

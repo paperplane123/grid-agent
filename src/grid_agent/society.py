@@ -13,7 +13,7 @@ from enum import StrEnum
 from pathlib import Path
 from typing import Any, Protocol
 
-from .diagnosis import FaultDiagnosis, FaultDiagnoser
+from .diagnosis import FaultDiagnoser, FaultDiagnosis
 from .model import FeederCase
 from .topology import RadialFeeder
 

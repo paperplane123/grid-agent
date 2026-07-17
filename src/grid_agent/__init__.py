@@ -1,6 +1,6 @@
 """Core package for grid-agent."""
 
-from .diagnosis import FaultDiagnosis, FaultDiagnoser
+from .diagnosis import FaultDiagnoser, FaultDiagnosis
 from .model import Branch, FeederCase, Measurement, Node
 from .society import (
     DiagnosticAssessment,
