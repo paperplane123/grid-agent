@@ -3,7 +3,6 @@ from pathlib import Path
 from grid_agent.demo import load_case, run_case
 from grid_agent.topology import RadialFeeder
 
-
 EXAMPLE = Path(__file__).parents[1] / "examples" / "feeder_10kv.json"
 
 

@@ -26,5 +26,7 @@ jobs:
         run: ruff check .
       - name: Test
         run: pytest
-      - name: Run demo
+      - name: Run diagnosis demo
         run: grid-agent diagnose examples/feeder_10kv.json --format json
+      - name: Run simulation demo
+        run: grid-agent simulate examples/gridsociety_incident.json --format json
