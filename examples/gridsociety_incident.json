@@ -1,0 +1,19 @@
+{
+  "name": "10kV馈线高阻接地故障处置闭环",
+  "feeder_case_path": "feeder_10kv.json",
+  "incident": {
+    "ground_truth_fault_branch": "B23",
+    "customers_by_node": {
+      "N3": 120,
+      "N4": 380,
+      "N5": 260
+    },
+    "critical_nodes": ["N4"],
+    "remote_operation_minutes": 2.0,
+    "field_inspection_minutes": 20.0,
+    "manual_review_minutes": 10.0,
+    "minimum_direct_isolation_confidence": 0.72,
+    "minimum_top_margin": 0.10,
+    "max_field_candidates": 2
+  }
+}
