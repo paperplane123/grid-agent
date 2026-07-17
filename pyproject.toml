@@ -4,8 +4,8 @@ build-backend = "hatchling.build"
 
 [project]
 name = "grid-agent"
-version = "0.1.0"
-description = "Tree-structured 10 kV feeder fault diagnosis and power-system agent toolkit"
+version = "0.2.0"
+description = "Distribution-grid fault diagnosis and physical-cognitive multi-agent simulation toolkit"
 readme = "README.md"
 requires-python = ">=3.11"
 authors = [{ name = "paperplane123" }]
