@@ -12,7 +12,7 @@ authors = [{ name = "paperplane123" }]
 dependencies = []
 
 [project.optional-dependencies]
-dev = ["pytest>=8.0", "ruff>=0.5"]
+dev = ["pytest>=8.0,<10", "ruff==0.15.22"]
 
 [project.scripts]
 grid-agent = "grid_agent.cli:main"
